@@ -69,3 +69,35 @@ people = ['mario', 'luigi', 'yoshi'];
 people.forEach(person => {
     content.innerHTML += `<p>${person}</p>`;
 });
+
+
+/*-------------------------- Getting & Setting Attributes ----------------------------- */
+
+
+const link = document.querySelector('a');
+
+console.log(link.getAttribute('href'));
+link.setAttribute('href', 'https://www.netninja.co.uk');
+link.innerText = 'The Net Ninja Website';
+
+console.log(link.getAttribute('href'));
+
+const msg = document.querySelector('.err');
+
+console.log(msg.getAttribute('class'));
+msg.setAttribute('class', 'success');
+msg.setAttribute('style', 'color: green');
+
+/*-------------------------- Changing CSS Styles ----------------------------- */
+
+
+// title = document.querySelector('h1');
+
+console.log(title.style);
+
+title.style.color = 'orange';
+title.style.margin = '50px';
+title.style.fontSize = '60px';
+title.style.margin = '';    // removes margin
+
+console.log(title.style.color);
